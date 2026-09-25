@@ -1,0 +1,5 @@
+OS & version: macOS Darwin 25.6.0 (arm64)
+Python version: Python 3.11.5
+Date run: 2026-09-24
+Setup: Created one venv per project and installed with `pip install -e '.[dev]'` in each `solution/` directory. The repo initially surfaced a NumPy/SciPy incompatibility under Python 3.14, so the final validation run used Python 3.11 as the supported runtime for all three systems.
+Live system runs: no live Anthropic calls were possible without a valid API key; end-to-end evidence therefore used the repo’s offline/fixture-driven workflow and the generated validation artifacts.

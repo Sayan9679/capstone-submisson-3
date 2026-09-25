@@ -1,0 +1,74 @@
+[
+  {
+    "policy_id": "POL-100",
+    "policy_type": "auto",
+    "decision": "auto_approve",
+    "reason": "all confidence at/above threshold, reviewer agrees, integration clean",
+    "fields_below_threshold": [],
+    "reviewer_disagreements": [],
+    "integration_failures": [],
+    "confidence_summary": {
+      "policy_type": 0.99,
+      "premium_amount": 0.99,
+      "deductible": 0.99,
+      "coverage_limit": 0.99,
+      "endorsements": 0.99,
+      "exclusions": 0.99
+    }
+  },
+  {
+    "policy_id": "POL-101",
+    "policy_type": "home",
+    "decision": "human_review",
+    "reason": "fields_below_threshold=['premium_amount']",
+    "fields_below_threshold": [
+      "premium_amount"
+    ],
+    "reviewer_disagreements": [],
+    "integration_failures": [],
+    "confidence_summary": {
+      "policy_type": 0.99,
+      "premium_amount": 0.65,
+      "deductible": 0.99,
+      "coverage_limit": 0.99,
+      "endorsements": 0.99,
+      "exclusions": 0.99
+    }
+  },
+  {
+    "policy_id": "POL-102",
+    "policy_type": "umbrella",
+    "decision": "human_review",
+    "reason": "integration_failure=['premium_matches_components_sum']",
+    "fields_below_threshold": [],
+    "reviewer_disagreements": [],
+    "integration_failures": [
+      "premium_matches_components_sum"
+    ],
+    "confidence_summary": {
+      "policy_type": 0.99,
+      "premium_amount": 0.99,
+      "deductible": 0.99,
+      "coverage_limit": 0.99,
+      "endorsements": 0.99,
+      "exclusions": 0.99
+    }
+  },
+  {
+    "policy_id": "POL-103",
+    "policy_type": "auto",
+    "decision": "spot_check",
+    "reason": "stratified drift-detection sample",
+    "fields_below_threshold": [],
+    "reviewer_disagreements": [],
+    "integration_failures": [],
+    "confidence_summary": {
+      "policy_type": 0.99,
+      "premium_amount": 0.99,
+      "deductible": 0.99,
+      "coverage_limit": 0.99,
+      "endorsements": 0.99,
+      "exclusions": 0.99
+    }
+  }
+]

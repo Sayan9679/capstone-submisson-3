@@ -1,0 +1,2 @@
+Success: no issues found in 14 source files
+All checks passed!
